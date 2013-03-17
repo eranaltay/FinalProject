@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/createwallpaper" >
+
+          <EditText
+              android:id="@+id/TitleEditTextLO"
+              android:layout_width="280dp"
+              android:layout_height="60dp"
+              android:layout_alignLeft="@+id/descriptionEditTextLO"
+              android:layout_alignParentTop="true"
+              android:layout_marginTop="84dp"
+              android:layout_toLeftOf="@+id/descriptionCLRbtn"
+              android:ems="10"
+              android:background="@drawable/selector"
+              android:hint="@string/titlehint"
+              android:inputType="textCapWords"
+              android:textColor="#FEFAFB"
+              android:textColorHint="#E0EAF8"
+              android:textSize="22dp"
+              android:typeface="monospace" >
+
+              <requestFocus />
+          </EditText>
+
+          <EditText
+              android:id="@+id/descriptionEditTextLO"
+              android:layout_width="280dp"
+              android:layout_height="100dp"         
+              android:layout_below="@+id/TitleEditTextLO"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="34dp"
+              android:ems="10"
+              android:hint="@string/descriptionhint"
+              android:background="@drawable/selector"
+              android:inputType="textMultiLine"
+              android:textColor="#FEFAFB"
+              android:textColorHint="#E0EAF8"
+              android:textSize="22dp"
+              android:typeface="monospace" />
+
+          <Button
+              android:id="@+id/titleCLRbtn"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_alignBaseline="@+id/TitleEditTextLO"
+              android:layout_alignBottom="@+id/TitleEditTextLO"
+              android:layout_alignRight="@+id/descriptionEditTextLO"
+              android:background="@drawable/abs__ic_clear" />
+
+          <Button
+              android:id="@+id/descriptionCLRbtn"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_alignRight="@+id/descriptionEditTextLO"
+              android:layout_below="@+id/descriptionEditTextLO"
+              android:background="@drawable/abs__ic_clear" />
+
+</RelativeLayout>

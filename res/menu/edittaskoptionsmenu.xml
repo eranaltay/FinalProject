@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+      	<item android:id="@+id/savetaskMI"
+          android:title="Add Task And Close" 
+          android:icon="@drawable/savepng"
+          android:showAsAction="always"
+         />
+
+      	<item android:id="@+id/proximityMI"
+          android:title="Set Proximity" 
+          android:icon="@drawable/addlocationpng"
+          android:showAsAction="always"
+         />
+    	
+    	<item android:id="@+id/alarmMI"
+          android:title="Set Alarm" 
+          android:icon="@drawable/addalarmpng"
+          android:showAsAction="always"
+         />
+    	
+    		
+    	<item android:id="@+id/backMI"
+          android:title="Back To List" 
+          android:icon="@drawable/backpng"
+          android:showAsAction="always"
+         />
+    	    	
+    	
+</menu>

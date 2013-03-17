@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chalkboard"
+    android:orientation="vertical" >
+
+
+     <ListView
+         android:id="@android:id/list"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:divider="@layout/divider"
+         android:dividerHeight="6dp"
+         android:fadingEdge="horizontal"
+         android:listSelector="#3399cc"
+         android:choiceMode="singleChoice"
+         android:gravity="center_horizontal"
+         android:requiresFadingEdge="vertical" >
+
+     </ListView>
+
+    <LinearLayout
+        android:id="@+id/undobar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:alpha="100"
+        android:background="#808080"
+        android:dividerPadding="11dp"
+        android:padding="4dp"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/undobar_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Deleted"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/undobar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="#808080"
+            android:drawableLeft="@android:drawable/ic_menu_revert"
+            android:onClick="onClick"
+            android:text="Undo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+ 
+ 

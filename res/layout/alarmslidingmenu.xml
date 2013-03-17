@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+	     <Switch
+	         android:id="@+id/switchNotificationLO"
+	         android:layout_width="204dp"
+	         android:layout_height="40dp"
+	         android:layout_alignLeft="@+id/spinnerRepeatingLO"
+	         android:layout_alignParentTop="true"
+	         android:layout_weight="0.01"
+	         android:soundEffectsEnabled="true"
+	         android:textColor="#3399cc"
+	         android:textOff="Alarm OFF"
+	         android:textOn="Alarm ON" />
+
+	     <Spinner
+	         android:id="@+id/spinnerRepeatingLO"
+	         android:layout_width="211dp"
+	         android:layout_height="55dp"
+	         style="@android:attr/spinnerItemStyle"
+	         android:layout_below="@+id/switchNotificationLO"
+	         android:layout_centerHorizontal="true"
+	         android:dropDownVerticalOffset="8dp"
+	         android:soundEffectsEnabled="true"
+	         android:textColor="#3399cc" />
+
+	     <TimePicker
+	         android:id="@+id/timePickerLO"
+	         android:layout_width="149dp"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/spinnerRepeatingLO"
+	         android:layout_centerHorizontal="true"
+	         android:layout_marginTop="20dp"
+	         android:layout_marginRight="10dp"
+	         android:soundEffectsEnabled="true" />
+
+	     <DatePicker
+	         android:id="@+id/datePickerLO"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentBottom="true"
+	         android:layout_centerHorizontal="true"
+	         android:layout_marginBottom="72dp"
+	         android:calendarViewShown="false" />
+
+</RelativeLayout>

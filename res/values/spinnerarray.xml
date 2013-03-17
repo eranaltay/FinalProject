@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="repeatArray">             
+        <item>No Repeating</item>             
+        <item>Daily</item> 
+        <item>Every Hour</item>   
+        <item>Every 30 Minutes</item>   
+        <item>Every 15 Minutes</item>                      
+    </array>   
+</resources>

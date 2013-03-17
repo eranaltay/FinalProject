@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="menu_settings">Settings</string>
+    <string name="appName">Taskify!</string>
+    <string name="add_task_act">Add Task</string>
+    <string name="done_bt_txt">No Signal</string>
+    <string name="add_task_to_list_bttxt">Add Task</string>
+    <string name="removeall">Clear List</string>
+    <string name="add_notify_str">Notification</string>
+    <string name="titlehint">Enter Your Task</string>
+    <string name="locationhint">Location Not Found</string>
+ 	<string name="descriptionhint">Description</string>
+ 	<string name="nolocation">No Location Found</string>
+ 	<string name="license"><b><u>"Licenses"</u></b></string>
+ 	<string name="version"><b>"Version 1.013"</b></string>
+ 	<string name="SlidingmenuURL"><u>https://github.com/jfeinstein10/SlidingMenu</u></string>
+	<string name="actionbarsherlock"><u>https://github.com/JakeWharton/ActionBarSherlock</u></string>
+	<string name="mailapp"><u>eranaltay@gmail.com</u></string>
+ 	
+</resources>

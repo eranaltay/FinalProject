@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    	
+      
+    	<item android:id="@+id/edittask"
+          android:title="Edit Selected Task" 
+          android:icon="@android:drawable/ic_menu_edit"
+          android:showAsAction="always"
+          /> 	
+    	
+     	<item android:id="@+id/showtask"
+          android:title="Show Selected Task"  
+          android:icon="@drawable/showtaskpng"
+          android:showAsAction="always"
+          /> 	
+    	
+    
+     	 <item android:id="@+id/masimportant"
+          android:title="Important/Unimportant Selected Task" 
+          android:icon="@drawable/importantmenu"
+          android:showAsAction="always"
+          /> 	
+    	
+        
+     	 <item android:id="@+id/masdone"
+          android:title="Done/Undone Selected Task" 
+          android:icon="@drawable/donestrike"
+          android:showAsAction="always"
+          /> 	
+     	  	    
+     	      	     
+     	 <item android:id="@+id/sharetask"
+          android:title="Share Selected Task" 
+          android:icon="@android:drawable/ic_menu_share"
+          android:showAsAction="always"
+          /> 	
+     	 
+     	 
+</menu>

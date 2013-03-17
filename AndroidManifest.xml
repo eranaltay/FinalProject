@@ -1,0 +1,119 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="il.ac.shenkar.ToDoList"
+    android:versionCode="5"
+    android:versionName="1.013" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/appName"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name=".TaskList.TaskListActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Styled"
+			android:configChanges="keyboardHidden">	
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />                
+            </intent-filter>            
+       </activity>
+               
+        
+         <activity
+           android:name="il.ac.shenkar.ToDoList.ShowTask.ShowTaskActivity"
+           android:screenOrientation="portrait"
+           android:theme="@style/Theme.Styled"
+           android:configChanges="keyboardHidden">	
+        </activity>  
+          
+        
+         <activity
+            android:name="il.ac.shenkar.ToDoList.TaskCreation.CreateTaskActivity"
+            android:configChanges="keyboard"
+            android:screenOrientation="portrait">
+        </activity>  
+     
+         
+        <activity
+            android:name="il.ac.shenkar.ToDoList.TaskifyAcknowledgement.CreditsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Styled"
+			android:configChanges="keyboardHidden">	
+        </activity>  
+     
+        <receiver android:name=".TaskAlarmManager.AlarmReceiver" >	
+		<intent-filter>	
+				<action	android:name="il.ac.shenkar.taskAlarmReceiver"	/>	
+		</intent-filter>	
+		</receiver>
+		       
+        <receiver android:name=".TaskLocationManager.LocationReceiver" >	
+		<intent-filter>	
+				<action	android:name="il.ac.shenkar.taskLocationReceiver"	/>	
+		</intent-filter>	
+		</receiver>
+		
+    <receiver android:name=".TaskUtilities.TaskReceiverRecovery">
+	<intent-filter>
+	<action
+	android:name="android.intent.action.BOOT_COMPLETED" />
+		<category android:name="android.intent.category.HOME" />
+	</intent-filter>
+	</receiver>
+        
+        
+        <receiver
+       android:icon="@drawable/ic_launcher"
+       android:label="Taskify! Home Widget"
+       android:name="il.ac.shenkar.ToDoList.TaskHomeWidgetManager.MyHomeWidgetManager" >
+       <intent-filter >
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+       </intent-filter>
+
+       <meta-data
+          android:name="android.appwidget.provider"
+          android:resource="@xml/widget_info" />
+		</receiver> 
+        
+        
+        
+     <service android:enabled="true" android:name=".TaskLocationManager.TaskLocationService"
+ 	   android:exported="true" />   
+        	
+         
+ 	<service android:enabled="true" android:name="il.ac.shenkar.ToDoList.TaskAlarmManager.TaskAlarmService"
+ 	   android:exported="true" />
+ 	
+    <service android:name=".TaskUtilities.NotificationService">
+	<intent-filter>
+	<action
+	android:name="il.ac.shenkar.NotificationServiceRecovery" />
+	</intent-filter>
+	</service>  
+    
+ 	
+ 	
+     </application>
+      
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>	
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>  
+
+        
+</manifest>
